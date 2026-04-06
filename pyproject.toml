@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "adk-session-services"
-version = "0.1.3"
+version = "0.1.4"
 description = "A Python package providing additional service implementations for the Google ADK framework (Redis, etc)"
 readme = "README.md"
 requires-python = ">=3.10"
