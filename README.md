@@ -18,7 +18,7 @@ pip install adk-session-services
 ### Redis
 
 ```python
-from redis_session.redis_session_service import RedisSessionService
+from adk_session_services.redis_session import RedisSessionService
 
 service = RedisSessionService("redis://localhost:6379")
 

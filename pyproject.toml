@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=61.0.0", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
 
 [project]
 name = "adk-session-services"
@@ -26,7 +26,8 @@ dependencies = [
     "google-adk",
     "google-generativeai>=0.8.5",
     "redis>=5.0.0",
-    "python-dotenv>=1.0.0",
+    "python-dotenv>=1.0.0"
+
 ]
 
 [project.optional-dependencies]
@@ -37,6 +38,8 @@ dev = [
     "flake8",
     "mypy",
     "isort",
+    "hatchling",
+    "editables>=0.5"
 ]
 test = [
     "pytest>=8.0.0",
@@ -59,7 +62,7 @@ package-dir = { "" = "src" }
 
 [tool.black]
 line-length = 88
-target-version = ['py310']
+target-version = ['py311']
 include = '\.pyi?$'
 
 [tool.isort]
