@@ -145,7 +145,7 @@ class RedisSessionService(BaseSessionService):
                 Session(
                     id=sid_str,
                     app_name=app_name,
-                    user_id=user_id,
+                    user_id=user_id if user_id else uuid.uuid4().hex,
                     state={},
                     events=[],
                     last_update_time=last,
