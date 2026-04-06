@@ -209,3 +209,10 @@ __marimo__/
 .gitignore
 /logs
 /data
+
+# vent
+/venv
+# ai
+/.claude
+CLAUDE.md
+/memory-bank
